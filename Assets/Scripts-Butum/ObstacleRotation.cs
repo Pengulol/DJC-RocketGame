@@ -8,7 +8,6 @@ public class ObstacleRotation : MonoBehaviour
     private float rotationSpeed = 50f;
     [SerializeField]
     private bool counterClockwise = false;
-    // Start is called before the first frame update
     void Start()
     {
         
