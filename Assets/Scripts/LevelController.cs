@@ -19,6 +19,7 @@ public class LevelController : MonoBehaviour
     }
     void Start()
     {
+        Physics.gravity = Vector3.zero;
         this.levelInit();
     }
 
