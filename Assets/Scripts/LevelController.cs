@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,20 @@ public class LevelController : MonoBehaviour
     [SerializeField]
     public GameObject _EndPoint;
     [SerializeField]
-    public GameObject _Player;
+    public GameObject _PlayerInstance;
+    [SerializeField]
+    public CinemachineVirtualCamera _CameraRig;
+    
+    private Camera _Camera;
+
     private void levelInit()
     {
-        var playerInstance = Instantiate(_Player);
-        playerInstance.transform.position = _StartPoint.transform.position;
-        playerInstance.transform.rotation = _StartPoint.transform.rotation;
+        this._PlayerInstance.transform.position = _StartPoint.transform.position;
+        this._PlayerInstance.transform.rotation = _StartPoint.transform.rotation;
+
+        this._CameraRig.Follow = this._PlayerInstance.transform;
+        this._CameraRig.LookAt = this._PlayerInstance.transform;
+
     }
     void Start()
     {
@@ -26,6 +35,5 @@ public class LevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

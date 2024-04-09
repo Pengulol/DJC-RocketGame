@@ -4,16 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Tunnel
   - Enemy
   - Drone
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Camera
   - Water
   - UI
-  - 
+  - Map
   - 
   - 
   - 
