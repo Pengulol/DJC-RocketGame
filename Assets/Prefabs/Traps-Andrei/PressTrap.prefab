@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6436082990740966580}
   - component: {fileID: 9016829696321152852}
   - component: {fileID: 8779294359350260901}
-  - component: {fileID: 7140919480708547972}
+  - component: {fileID: 8492015373837172245}
   m_Layer: 0
   m_Name: hammer main
   m_TagString: Obstacle
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7140919480708547972
-BoxCollider:
+--- !u!64 &8492015373837172245
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -99,12 +99,13 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.02, y: 0.019999996, z: 0.0060156127}
-  m_Center: {x: -4.723987e-17, y: 5.960465e-10, z: 0.004309461}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7158846667287526393, guid: 4482214f8933546f6997609946a510bd, type: 3}
 --- !u!1 &8160325574565249131
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +117,7 @@ GameObject:
   - component: {fileID: 4455286696505770851}
   - component: {fileID: 2167295276975405380}
   - component: {fileID: 6435600730436240240}
+  - component: {fileID: 1861891821683628488}
   m_Layer: 0
   m_Name: hammer top
   m_TagString: Untagged
@@ -188,6 +190,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1861891821683628488
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160325574565249131}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6823741037212007426, guid: 4482214f8933546f6997609946a510bd, type: 3}
 --- !u!1 &8705187312690819222
 GameObject:
   m_ObjectHideFlags: 0

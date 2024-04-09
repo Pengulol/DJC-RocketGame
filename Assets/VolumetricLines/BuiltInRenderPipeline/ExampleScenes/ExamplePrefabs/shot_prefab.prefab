@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 11489952}
   - component: {fileID: 11468384}
   - component: {fileID: 10825254}
+  - component: {fileID: 6676986608293796021}
   m_Layer: 0
   m_Name: shot_prefab
   m_TagString: Untagged
@@ -179,3 +180,26 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!136 &6676986608293796021
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3.98
+  m_Height: 58.34
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 25.000004}
