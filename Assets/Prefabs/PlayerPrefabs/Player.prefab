@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 1572975367306671805}
   - component: {fileID: 2324024085090695812}
   - component: {fileID: 2428462017284345548}
-  - component: {fileID: 2769484570630710515}
+  - component: {fileID: 4589832564495194471}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -716,7 +716,7 @@ MonoBehaviour:
   _playerYawSpeed: 30
   _playerPitchSpeed: 40
   _playerMaxVelocity: 0.8
---- !u!114 &2769484570630710515
+--- !u!114 &4589832564495194471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -725,6 +725,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4786501658150842490}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6279168c123ee34d8dc8fbf980b9cd1, type: 3}
+  m_Script: {fileID: 11500000, guid: c2172d16a23a1ea4293e486f4ae0815d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
