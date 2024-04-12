@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4838848731261589193}
   m_Layer: 0
   m_Name: Prism (4)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 314977005423268967}
   m_Layer: 0
   m_Name: Prism (15)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 1342437950805780306}
   m_Layer: 0
   m_Name: Prism (3)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -692,13 +692,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925637592279505007}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.55450207, w: 0.8321824}
-  m_LocalPosition: {x: 3.8492987, y: -0.3483594, z: -2.7292001}
+  m_LocalRotation: {x: -0.0008251241, y: -0.00016709385, z: 0.554569, w: 0.83213735}
+  m_LocalPosition: {x: 3.8493063, y: -0.34832436, z: -2.7288845}
   m_LocalScale: {x: 0.46502158, y: 0.46502158, z: 1.519365}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6684148645460862473}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 67.353}
+  m_LocalEulerAnglesHint: {x: -0.068, y: -0.068, z: 67.362}
 --- !u!114 &6597792504358181998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,7 +1010,7 @@ GameObject:
   - component: {fileID: 2679398997184182546}
   m_Layer: 0
   m_Name: Prism (11)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 736227844540129567}
   m_Layer: 0
   m_Name: Prism (12)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1672,7 +1672,7 @@ GameObject:
   - component: {fileID: 8420160923493799062}
   m_Layer: 0
   m_Name: Prism
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2003,7 +2003,7 @@ GameObject:
   - component: {fileID: 1248972260672012671}
   m_Layer: 0
   m_Name: Prism (9)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2334,7 +2334,7 @@ GameObject:
   - component: {fileID: 6624167681649138256}
   m_Layer: 0
   m_Name: Prism (8)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2659,7 +2659,7 @@ GameObject:
   - component: {fileID: 6684148645460862473}
   m_Layer: 0
   m_Name: Moving spikes
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2712,7 +2712,7 @@ GameObject:
   - component: {fileID: 4033644130587698675}
   m_Layer: 0
   m_Name: Prism (14)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3043,7 +3043,7 @@ GameObject:
   - component: {fileID: 7356232184000956123}
   m_Layer: 0
   m_Name: Prism (6)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3374,7 +3374,7 @@ GameObject:
   - component: {fileID: 7280302763063667872}
   m_Layer: 0
   m_Name: Prism (5)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3705,7 +3705,7 @@ GameObject:
   - component: {fileID: 7989185523101961526}
   m_Layer: 0
   m_Name: Prism (10)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4036,7 +4036,7 @@ GameObject:
   - component: {fileID: 7256647410506476799}
   m_Layer: 0
   m_Name: Prism (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4367,7 +4367,7 @@ GameObject:
   - component: {fileID: 881198494227161685}
   m_Layer: 0
   m_Name: Prism (13)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4698,7 +4698,7 @@ GameObject:
   - component: {fileID: 4551582647819203967}
   m_Layer: 0
   m_Name: Prism (7)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5029,7 +5029,7 @@ GameObject:
   - component: {fileID: 5819301095612174008}
   m_Layer: 0
   m_Name: Prism (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

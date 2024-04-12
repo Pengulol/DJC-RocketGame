@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         var horizontalTurn = this._playerYawSpeed * horizontalInput * Time.deltaTime;
         var quaternionTurnHor = Quaternion.Euler(0f, horizontalTurn, 0f);
 
-        var verticalTurn = this._playerPitchSpeed * verticalInput * Time.deltaTime;
+        var verticalTurn = this._playerPitchSpeed * verticalInput * -1 * Time.deltaTime;
         var quaternionTurnVer = Quaternion.Euler(verticalTurn, 0f, 0f);
 
         this._playerRigidbody.MoveRotation(this._playerRigidbody.rotation * quaternionTurnHor);

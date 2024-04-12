@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 1861891821683628488}
   m_Layer: 0
   m_Name: hammer top
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 8705187312690819208}
   m_Layer: 0
   m_Name: PressTrap
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
