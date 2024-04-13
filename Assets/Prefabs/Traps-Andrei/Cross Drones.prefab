@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7145899440582038243}
   m_Layer: 0
   m_Name: Cross Drones
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 19b18af03db8fba4e88198b3c18c6dd7, type: 3}
       propertyPath: m_TagString
-      value: Drone
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 19b18af03db8fba4e88198b3c18c6dd7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 19b18af03db8fba4e88198b3c18c6dd7, type: 3}
       propertyPath: m_TagString
-      value: Drone
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 19b18af03db8fba4e88198b3c18c6dd7, type: 3}
       propertyPath: m_LocalPosition.x

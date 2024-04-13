@@ -89,7 +89,7 @@ public class MenuUI : MonoBehaviour
         if (GUI.Button(new Rect(52, 40, 100, 20), "Level 1"))
         {
             
-            SceneManager.LoadScene("Level_Butum_1");
+            SceneManager.LoadScene("Level_1_Cristi");
         }
 
         if (GUI.Button(new Rect(60, 130, 80, 20), "Close"))
