@@ -13,8 +13,13 @@ public class LevelUI : MonoBehaviour
     private Rect timerRect = new Rect(0, 0, 120, 60);
     private Rect pauseRect = new Rect(0, 0, 70, 70);
     private Rect finishRect = new Rect(0, 0, 200, 100);
+    private Rect collisionRect = new Rect(0, 0, 200, 100);
     private bool isPaused = false;
     private bool isLevelFinished = false;
+    private bool isCollision = false;
+    private int attempts;
+    private float reloadTime = 3f;
+    private float timer = 3f;
     void Start()
     {
         startTime = Time.time;
@@ -27,6 +32,9 @@ public class LevelUI : MonoBehaviour
 
         finishRect.x = (Screen.width - finishRect.width) / 2;
         finishRect.y = (Screen.height - finishRect.height) / 2;
+
+        collisionRect.x = (Screen.width - collisionRect.width) / 2;
+        collisionRect.y = (Screen.height - collisionRect.height) / 2 - 200;
     }
 
     void Update()
@@ -49,6 +57,11 @@ public class LevelUI : MonoBehaviour
         {
             finishRect = GUI.Window(1, finishRect, FinishWindow, "You finished the level!");
             Time.timeScale = 0;
+        }
+
+        if (isCollision)
+        {
+            collisionRect = GUI.Window(2, collisionRect, CollisionWindow, "You hit an obstacle!");
         }
 
     }
@@ -80,5 +93,23 @@ public class LevelUI : MonoBehaviour
     public void DrawFinishWindow()
     {
         isLevelFinished = true;
+    }
+
+    void CollisionWindow(int windowID)
+    {
+        timer -= Time.deltaTime;
+
+        GUI.Label(new Rect(50, 25, 120, 50), "Reloading in " +Mathf.Ceil(timer));
+
+        if (timer <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        }
+    }
+
+    public void DrawCollisionWindow()
+    {
+        isCollision = true;
     }
 }
