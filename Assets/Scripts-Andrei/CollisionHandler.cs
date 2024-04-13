@@ -19,6 +19,7 @@ public class CollisionHandler : MonoBehaviour
 
             default:
                 Debug.Log("Obstacle hit");
+                collision.gameObject.GetComponent<Collider>().enabled = false;
                 gameObject.transform.localScale = new Vector3(0, 0, 0);
                 gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                 ParticleSystem obstacleHitEffect = Instantiate(obstacleHitParticle, collision.contacts[0].point, Quaternion.identity);
