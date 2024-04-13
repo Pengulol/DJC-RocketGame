@@ -65,7 +65,6 @@ public class MenuUI : MonoBehaviour
             showMainMenu = false;
         }
 
-        GUI.DragWindow(new Rect(0, 0, 10000, 10000));
     }
 
     void OptionsWindow(int windowID)
@@ -81,7 +80,6 @@ public class MenuUI : MonoBehaviour
             showMainMenu = true;
         }
 
-        GUI.DragWindow(new Rect(0, 0, 10000, 10000));
     }
 
     void LevelSelectionWindow(int windowID)
@@ -99,7 +97,6 @@ public class MenuUI : MonoBehaviour
             showMainMenu = true;
         }
 
-        GUI.DragWindow(new Rect(0, 0, 10000, 10000));
     }
 
     public void SetVolume(float volume)
