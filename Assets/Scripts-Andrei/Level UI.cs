@@ -9,7 +9,7 @@ public class LevelUI : MonoBehaviour
     public Texture2D pauseButtonTexture;
 
     private float startTime;
-
+    private const string TimeKey = "Time";
     private Rect timerRect = new Rect(0, 0, 120, 60);
     private Rect pauseRect = new Rect(0, 0, 70, 70);
     private Rect finishRect = new Rect(0, 0, 200, 100);
@@ -72,6 +72,9 @@ public class LevelUI : MonoBehaviour
         string minutes = ((int)t / 60).ToString();
         string seconds = (t % 60).ToString("f2");
         GUI.Label(new Rect(5, 30, 100, 20), minutes + ":" + seconds);
+        PlayerPrefs.SetFloat(TimeKey, t);
+        PlayerPrefs.Save();
+
     }
 
     void TogglePause()
