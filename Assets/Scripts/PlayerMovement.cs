@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float _playerPitchSpeed = 40f;
     [SerializeField]
     public float _playerMaxVelocity = 0.8f;
+    private float _playerMaxBoostVelocity = 1.2f;
 
     private GameObject _player;
     private Rigidbody _playerRigidbody;
@@ -46,6 +47,25 @@ public class PlayerMovement : MonoBehaviour
         {
             this._playerRigidbody.AddRelativeForce(Vector3.forward * _playerThrusterForce, ForceMode.Impulse);
             this._playerRigidbody.velocity = this._playerRigidbody.velocity.normalized * _playerMaxVelocity; //speed cap
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (_playerMaxVelocity < _playerMaxBoostVelocity)
+            {
+                _playerMaxVelocity += 0.01f;
+                PlayerPrefs.SetFloat("PlayerMaxVelocity", _playerMaxVelocity);
+                PlayerPrefs.Save();
+            }
+        }
+        else
+        {
+            if (_playerMaxVelocity > 0.8f)
+            {
+                _playerMaxVelocity -= 0.01f;
+                PlayerPrefs.SetFloat("PlayerMaxVelocity", _playerMaxVelocity);
+                PlayerPrefs.Save();
+            }
         }
     }
 }
